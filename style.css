@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #0d6d78;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+section {
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px #0d6d78;
+}
+
+section > h2 {
+    text-align: center;
+    color: #0d6d78;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0d6d78;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* INPUT SECTION */
+#input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-section > form > .input-item {
+    margin: 15px 0;
+}
+
+#input-section > form > button {
+    display: block;
+    width: 100%;
+}
+
+#input-section > form > button > span {
+    font-weight: bold;
+}
+
+#input-section > form > .input-item > input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#input-section > form > .input-item > label {
+    color: #0d6d78;
+    font-weight: bold;
+}
+
+#input-section > form > .input-item-check {
+    margin: 15px 0;
+    display: flex;
+}
+
+#input-section > form > .input-item-check > label {
+    color: #0d6d78;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* SEARCH SECTION */
+#search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 1px #0d6d78;
+}
+
+#buttonShowBookList {
+    margin-top: 10px;
+}
+
+#search-section > form {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.1fr;
+    grid-gap: 10px;
+}
+
+#search-section > form > label {
+    color: #0d6d78;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#search-section > form > input {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BOOK SHELF */
+
+#book-shelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#book-shelf h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d6d78;
+}
+
+.book-list {
+    flex-basis: 48%;
+    margin: 5px;
+}
+
+.book-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 0 1px #0d6d78;
+}
+
+.book-item h3, .book-item p, .book-item h4 {
+    margin-bottom: 5px;
+}
+
+.book-item .action {
+    float: right;
+}
+
+.btn-red {
+    background-color: #ba0c0c;
+}
+
+.btn-success {
+    background-color: #0d6d78;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .book-list {
+        flex-basis: 100%;
+    }
+}

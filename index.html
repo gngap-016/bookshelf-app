@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h4>Bookshelf App - Gilang Ap</h4>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="input-book">
+                <div class="input-item">
+                    <label for="inputBookTitle">Judul Buku :</label>
+                    <input id="inputBookTitle" type="text">
+                </div>
+                <div class="input-item">
+                    <label for="inputBookAuthor">Penulis :</label>
+                    <input id="inputBookAuthor" type="text">
+                </div>
+                <div class="input-item">
+                    <label for="inputBookYear">Tahun Terbit :</label>
+                    <input id="inputBookYear" type="number">
+                </div>
+                <div class="input-item-check">
+                    <input id="inputBookIsComplete" type="checkbox">
+                    <label for="inputBookIsComplete">Selesai Baca</label>
+                </div>
+                <button type="submit" id="inputSubmit">
+                    Masukkan Buku ke Rak
+                    <span>"Belum Selesai Baca"</span>
+                </button>
+            </form>
+        </section>
+        
+        <section id="search-section">
+            <h2>Cari Buku</h2>
+            <form id="search-book">
+                <label for="searchBookTitle">Judul</label>
+                <input id="searchBookTitle" type="text">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+            <button id="buttonShowBookList">Tampilkan Semua Daftar Buku</button>
+        </section>
+
+        <div id="book-shelf">
+            <section class="book-list book-shelf-incomplete">
+                <h2>Belum Selesai Baca</h2>
+                <div id="incompleteBookList" class="list-item">
+                    <!-- <article class="book-item">
+                        <h3>Title</h3>
+                        <p>Author</p>
+                        <h4>Year</h4>
+                        <div class="action">
+                            <button class="btn-success">Selesai Baca</button>
+                            <button class="btn-red">Hapus</button>
+                        </div>
+                        <div class="clear"></div>
+                    </article> -->
+                </div>
+            </section>
+            <section class="book-list book-shelf-complete">
+                <h2>Selesai Baca</h2>
+                <div id="completeBookList" class="list-item">
+                    <!-- <article class="book-item">
+                        <h3>Title</h3>
+                        <p>Author</p>
+                        <h4>Year</h4>
+                        <div class="action">
+                            <button class="btn-success">Belum Selesai Baca</button>
+                            <button class="btn-red">Hapus</button>
+                        </div>
+                        <div class="clear"></div>
+                    </article> -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
